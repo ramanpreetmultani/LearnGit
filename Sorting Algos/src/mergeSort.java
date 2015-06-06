@@ -29,12 +29,12 @@ public class mergeSort {
 			int b[] = new int [size/2];
 			int c[] = new int [size/2 + size%2];
 			
-			//put half a in b
+			//put first half of a in b
 			for(int i=0;i<b.length;i++){
 				b[i]=a[i];
 			}
 			
-			//put second half a in c
+			//put second half of a in c
 			for(int i=0;i<c.length;i++){
 				c[i]=a[i+b.length];
 			}
@@ -42,7 +42,7 @@ public class mergeSort {
 			operate(b,b.length);
 			operate(c,c.length);
 			
-			merge(a,b,c);
+			merge(a,b,c); // merge the two sorted arrays into one
 			
 		}
 		
