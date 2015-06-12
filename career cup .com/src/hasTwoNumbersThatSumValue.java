@@ -32,6 +32,8 @@ public class hasTwoNumbersThatSumValue {
 	/*hasTwoNumbersThatSumValue function*/
 	public static boolean funct(int arr[],int num){
 		
+		//Hashing is used worst case lookup for an element is O(n)
+		//expected lookup is O(1)
 		HashSet<Integer> test = new HashSet<Integer>();
 		
 		for(int i=0;i<arr.length;i++){
@@ -41,5 +43,29 @@ public class hasTwoNumbersThatSumValue {
 				test.add(arr[i]);
 		}
 		return false;
+		
+		/*
+		 * other method could be sort the array first
+		 * [a,b,c,d,e,f]
+		 * 1.	a+f>num
+		 * 2.	a+f<num
+		 * 3.	a+f=num
+		 * 
+		 * for 1.
+		 * {
+		 * 	decrease upper pointer from f to e
+		 * 	check again(reloop)
+		 * }
+		 * 
+		 * for 2.
+		 * {
+		 * 	increase upper pointer from a to b
+		 * 	check again(reloop)
+		 * }
+		 * 
+		 * for 3. return true
+		 * 
+		 * complexity = sorting(nlogn) + n(checking) 
+		 * */
 	}
 }
