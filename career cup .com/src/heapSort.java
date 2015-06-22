@@ -54,10 +54,8 @@ public class heapSort {
 		
 		if(arr[max]<arr[i] )
 			max=i;
-
 		if(arr.length>(pos*2+1) && arr[max]<arr[j])
 			max=j;
-		
 		
 		return max;
 	}
