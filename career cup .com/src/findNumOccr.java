@@ -5,7 +5,7 @@ public class findNumOccr {
 	
 	/*MAIN*/
 	public static void main(String args[]){
-		
+		//git merge testing
 		//initializing the length of array
 		System.out.println("Enter the length of array:");
 		int x;
