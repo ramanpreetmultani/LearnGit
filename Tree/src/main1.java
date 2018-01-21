@@ -4,7 +4,6 @@ public class main1 {
 		
 		linklist y = new linklist();
 		
-		y.insert(10);
 		y.display();
 	}
 }
